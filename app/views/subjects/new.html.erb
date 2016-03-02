@@ -1,0 +1,20 @@
+<h1>Nuevas asignaturas</h1>
+
+<%= link_to "Ver todos", subjects_path %>
+
+<%= form_for @subject do |f| %>
+
+  <p>
+    <%= f.label :nombre, "Subject" %><br>
+    <%= f.text_area :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :codigo, "Subject" %><br>
+    <%= f.text_area :codigo %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
