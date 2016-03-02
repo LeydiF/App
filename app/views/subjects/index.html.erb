@@ -1,1 +1,17 @@
 <h1>Asignaturas</h1>
+
+
+<ol>
+	<% @subject.each do |subject| %>
+
+		<li>
+			<%= subject.nombre %>
+			<%= subject.codigo %>
+			<%= link_to "editar", edit_subject_path(subject) %>
+			<%= link_to "delete", subject_path(subject), method: :delete, data: {confirm: "Estas seguro ? "} %>
+		</li>
+
+	<% end %>
+</ol>
+
+<%= link_to "Agregar asignatura", new_subject_path %>
