@@ -1,0 +1,30 @@
+<h1>Agregar profesor</h1>
+
+<%= form_for @teacher do |f| %>
+
+  <p>
+    <%= f.label :nombre, "Nombre" %><br>
+    <%= f.text_area :nombre %>
+  </p>
+
+<p>
+  <%= f.label :apellido, "Apellido" %><br>
+  <%= f.text_area :apellido %>
+</p>
+
+<p>
+  <%= f.label :identificacion, "Identificacion" %><br>
+  <%= f.text_area :identificacion %>
+</p>
+
+<p>
+  <%= f.label :asignatura, "asignatura" %><br>
+  <%= f.text_area :asignatura %>
+</p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to "Ver profesores", teachers_path %>
