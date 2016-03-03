@@ -1,0 +1,24 @@
+<h1>Estudiantes</h1>
+
+
+<ol>
+	<% @estudiante.each do |estudiante| %>
+
+		<li>
+			<strong>Nombre: </strong><%= estudiante.nombre %> <br>
+			<strong>Apellido: </strong><%= estudiante.apellido %> <br>
+			<strong>Identificacion: </strong><%= estudiante.identificacion %> <br>
+			<strong>Asignaturas: </strong>
+				<% estudiante.subjects.each do |asignatura| %> 
+					<%= asignatura.nombre %> 
+				<% end %>
+			<br>
+			<strong>Email: </strong><%= estudiante.email %> <br><br>
+			<%= link_to "editar", edit_estudiante_path(estudiante) %>
+			<%= link_to "delete", estudiante_path(estudiante), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+		</li>
+
+	<% end %>
+</ol>
+
+<%= link_to "Agregar Estudiante", new_estudiante_path %>

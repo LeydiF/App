@@ -1,0 +1,38 @@
+<h1>Agregar Estudiantes</h1>
+
+<%= form_for @estudiante do |f| %>
+
+  <p>
+    <%= f.label :nombre, "Nombre" %><br>
+    <%= f.text_area :nombre %>
+  </p>
+
+<p>
+  <%= f.label :apellido, "Apellido" %><br>
+  <%= f.text_area :apellido %>
+</p>
+
+<p>
+  <%= f.label :identificacion, "Identificacion" %><br>
+  <%= f.text_area :identificacion %>
+</p>
+
+<p>
+  <% Subject.all.each do |asignatura|%> 
+
+    <%= check_box_tag "asignaturas[]", asignatura.id %>
+    <%= asignatura.nombre %><br> 
+  <% end %>
+</p>
+
+<p>
+  <%= f.label :email, "Email" %><br>
+  <%= f.text_area :email %>
+</p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to "Ver estudiantes", estudiantes_path %>

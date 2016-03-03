@@ -5,8 +5,8 @@
 	<% @subject.each do |subject| %>
 
 		<li>
-			<%= subject.nombre %>
-			<%= subject.codigo %>
+			<strong>Nombre: </strong><%= subject.nombre %><br>
+			<strong>Codigo: </strong><%= subject.codigo %><br><br>
 			<%= link_to "editar", edit_subject_path(subject) %>
 			<%= link_to "delete", subject_path(subject), method: :delete, data: {confirm: "Estas seguro ? "} %>
 		</li>

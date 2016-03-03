@@ -1,10 +1,13 @@
 class TeachersController < ApplicationController
+
+	
 	def index
 		@teacher = Teacher.all
 	end
 
 	def new
 		@teacher = Teacher.new
+
 	end
 
 	def edit
@@ -15,6 +18,8 @@ class TeachersController < ApplicationController
 	def create
 		@teacher = Teacher.new(teacher_params)
 		@teacher.save
+
+		# @estudiante.asignaturas << Asignatura.where(params[:asignaturas])
 		redirect_to teachers_path
 	end
 

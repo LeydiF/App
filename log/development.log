@@ -3283,3 +3283,2400 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-02 17:16:25 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-02 17:21:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-02 17:21:17 -0500
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:40:31 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Asignatura):
+     7:     <%= f.text_area :nombre %>
+     8:   </p>
+     9: 
+    10:  <%Asignatura.all.each do |asignatura|%>
+    11:   <%= check_box_tag "asignaturas[]", asignatura.id %>
+    12:   <% end %>
+    13: 
+  app/views/subjects/new.html.erb:10:in `block in _app_views_subjects_new_html_erb___84390370__623540658'
+  app/views/subjects/new.html.erb:3:in `_app_views_subjects_new_html_erb___84390370__623540658'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (4.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (4.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:40:31 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Asignatura):
+     7:     <%= f.text_area :nombre %>
+     8:   </p>
+     9: 
+    10:  <%Asignatura.all.each do |asignatura|%>
+    11:   <%= check_box_tag "asignaturas[]", asignatura.id %>
+    12:   <% end %>
+    13: 
+  app/views/subjects/new.html.erb:10:in `block in _app_views_subjects_new_html_erb___84390370__640335608'
+  app/views/subjects/new.html.erb:3:in `_app_views_subjects_new_html_erb___84390370__640335608'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.3ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:40:46 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Asignatura):
+     7:     <%= f.text_area :nombre %>
+     8:   </p>
+     9: 
+    10:  <% Asignatura.all.each do |asignatura|%>
+    11:   <%= check_box_tag "asignaturas[]", asignatura.id %>
+    12:   <% end %>
+    13: 
+  app/views/subjects/new.html.erb:10:in `block in _app_views_subjects_new_html_erb___84390370__638430528'
+  app/views/subjects/new.html.erb:3:in `_app_views_subjects_new_html_erb___84390370__638430528'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.0ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+Processing by SubjectsController#new as HTML
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:58 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-02 17:40:59 -0500
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:41:28 -0500
+Processing by SubjectsController#new as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/new.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `name' for #<Subject:0xa93f2d8>):
+    10:   <% Subject.all.each do |asignatura|%>
+    11: 
+    12:   	<%= check_box_tag "asignaturas[]", asignatura.id %>
+    13:   	<%= asignatura.name %>
+    14:   <% end %>
+    15: 
+    16: <p>
+  app/views/subjects/new.html.erb:13:in `block (2 levels) in _app_views_subjects_new_html_erb___84390370_88832640'
+  app/views/subjects/new.html.erb:10:in `block in _app_views_subjects_new_html_erb___84390370_88832640'
+  app/views/subjects/new.html.erb:3:in `_app_views_subjects_new_html_erb___84390370_88832640'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+Processing by SubjectsController#new as HTML
+  [1m[35mSubject Load (0.4ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-02 17:41:34 -0500
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 63ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 13:17:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstudiantes (20160303182042)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:35:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (4.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (64.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstudiantes (20160303182042)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:36:04 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (63.5ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:36:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 13:36:14 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 13:36:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (4.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstudiantes (20160303182042)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstudiantes (20160303182042)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "estudiantes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "apellido" varchar, "identificacion" integer, "asignaturas" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160303182042"]]
+  [1m[36m (28.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 13:40:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.8ms)
+Completed 200 OK in 701ms (Views: 688.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:40:53 -0500
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:41:00 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 73ms (Views: 68.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 13:41:55 -0500
+Processing by EstudiantesController#new as HTML
+  Rendered estudiantes/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Agregar Estudiantes</h1>
+    2: 
+    3: <%= form_for @estudiantes do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :nombre, "Nombre" %><br>
+  app/views/estudiantes/new.html.erb:3:in `_app_views_estudiantes_new_html_erb___846714219__631547508'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (8.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (6.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.6ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 13:41:56 -0500
+Processing by EstudiantesController#new as HTML
+  Rendered estudiantes/new.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Agregar Estudiantes</h1>
+    2: 
+    3: <%= form_for @estudiantes do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :nombre, "Nombre" %><br>
+  app/views/estudiantes/new.html.erb:3:in `_app_views_estudiantes_new_html_erb___846714219__624894418'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.8ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 13:42:55 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:43:04 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 13:43:13 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.3ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:43:17 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 13:44:01 -0500
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-03 13:44:03 -0500
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-03 13:44:05 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2016-03-03 13:44:20 -0500
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UtwTbPyUdGK4BHzq2eD8kGY6HgYcXJSIwsN6Uvx1tYb+S48JYDUf5I2K0mV6imj9G1AwyhX/5d+2LwjckK/jxg==", "subject"=>{"nombre"=>"Ciencias", "codigo"=>"125"}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "subjects" ("nombre", "codigo", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["nombre", "Ciencias"], ["codigo", 125], ["created_at", "2016-03-03 18:44:20.383260"], ["updated_at", "2016-03-03 18:44:20.383260"]]
+  [1m[36m (56.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 65ms (ActiveRecord: 59.4ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-03 13:44:20 -0500
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-03 13:44:25 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2016-03-03 13:44:42 -0500
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uozDSEYZGQ2oy2oiWQS5fyjlT4owq23c9rRQqb5QKdQWG18t2rhyi51FxK36bi0SVY9hRjkIHIuCWCIn0op/lA==", "subject"=>{"nombre"=>"Ingles", "codigo"=>"1267"}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "subjects" ("nombre", "codigo", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["nombre", "Ingles"], ["codigo", 1267], ["created_at", "2016-03-03 18:44:42.828121"], ["updated_at", "2016-03-03 18:44:42.828121"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 13ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-03 13:44:42 -0500
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (4.3ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-03 13:44:46 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2016-03-03 13:44:55 -0500
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JVeMJD1wnatu3WqEZ3sOovzxghGp/sMqDojzBlMq0fqJwBBBodH2LVtTxAvEEZrPgZus3aBdsn16ZIGIP/CHug==", "subject"=>{"nombre"=>"Sociales", "codigo"=>"758"}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subjects" ("nombre", "codigo", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["nombre", "Sociales"], ["codigo", 758], ["created_at", "2016-03-03 18:44:55.813083"], ["updated_at", "2016-03-03 18:44:55.813083"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 11ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-03 13:44:55 -0500
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2016-03-03 13:44:57 -0500
+Processing by SubjectsController#new as HTML
+  Rendered subjects/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2016-03-03 13:45:08 -0500
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"suAwinqrL+2UQzNJfZGg0BaRtyrdvg1aqCe91/BC6Hced6zv5gpEa6HNncbe+zS9a/uZ5tQdfA3cy89ZnJi+Nw==", "subject"=>{"nombre"=>"Religion", "codigo"=>"647"}, "commit"=>"Create Subject"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subjects" ("nombre", "codigo", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["nombre", "Religion"], ["codigo", 647], ["created_at", "2016-03-03 18:45:08.106026"], ["updated_at", "2016-03-03 18:45:08.106026"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 14ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2016-03-03 13:45:08 -0500
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sestudiantes" for 127.0.0.1 at 2016-03-03 13:45:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/sestudiantes"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/leydi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.1ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 13:45:34 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 13:45:36 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered estudiantes/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:46:27 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:46:27.686464"], ["updated_at", "2016-03-03 18:46:27.686464"]]
+  [1m[36m (26.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 27.2ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (64.0ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:48:37 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:48:37.725879"], ["updated_at", "2016-03-03 18:48:37.725879"]]
+  [1m[35m (34.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 42.5ms)
+
+NoMethodError (undefined method `<<' for nil:NilClass):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (4.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.0ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:49:58 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:49:58.225819"], ["updated_at", "2016-03-03 18:49:58.225819"]]
+  [1m[36m (33.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 34.3ms)
+
+NoMethodError (undefined method `<' for nil:NilClass):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (5.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.0ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:51:08 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:51:08.307067"], ["updated_at", "2016-03-03 18:51:08.307067"]]
+  [1m[35m (76.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 83.1ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (35.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (8.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (72.0ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:52:49 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:52:49.848023"], ["updated_at", "2016-03-03 18:52:49.848023"]]
+  [1m[36m (24.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 30.1ms)
+
+NoMethodError (undefined method `asignatura' for #<Estudiante:0xb3e0a0e8>):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.8ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:54:57 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:54:57.810429"], ["updated_at", "2016-03-03 18:54:57.810429"]]
+  [1m[35m (91.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 93.8ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.7ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 13:56:21 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 18:56:21.294134"], ["updated_at", "2016-03-03 18:56:21.294134"]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 14.7ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (4.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.0ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:00:27 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGspqvNcqBsrQ+WzGFljsL1h3ltBLB1M1KsPvAHjSAEI/LXPb/3DnR7NSzy7M/fdwAvwl0iPbBugR30ybTkeQQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "email"=>"luisaf@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Luisa Fernanda"], ["apellido", "Lopera"], ["identificacion", 123456789], ["email", "luisaf@prueba.es"], ["created_at", "2016-03-03 19:00:27.137160"], ["updated_at", "2016-03-03 19:00:27.137160"]]
+  [1m[35m (53.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 58.1ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (59.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 14:03:24 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:03:27 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.3ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `asignatura' for #<Estudiante:0xb291eae4>):
+     8: 			<strong>Nombre: </strong><%= estudiante.nombre %> <br>
+     9: 			<strong>Apellido: </strong><%= estudiante.apellido %> <br>
+    10: 			<strong>Identificacion: </strong><%= estudiante.identificacion %> <br>
+    11: 			<strong>Asignatura: </strong><%= estudiante.asignatura %> <br>
+    12: 			<strong>Email: </strong><%= email.asignatura %> <br><br>
+    13: 			<%= link_to "editar", edit_estudiante_path(estudiante) %>
+    14: 			<%= link_to "delete", estudiante_path(estudiante), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+  app/views/estudiantes/index.html.erb:11:in `block in _app_views_estudiantes_index_html_erb___487020129_86874810'
+  app/views/estudiantes/index.html.erb:5:in `_app_views_estudiantes_index_html_erb___487020129_86874810'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.3ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:03:28 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `asignatura' for #<Estudiante:0xb334ef8c>):
+     8: 			<strong>Nombre: </strong><%= estudiante.nombre %> <br>
+     9: 			<strong>Apellido: </strong><%= estudiante.apellido %> <br>
+    10: 			<strong>Identificacion: </strong><%= estudiante.identificacion %> <br>
+    11: 			<strong>Asignatura: </strong><%= estudiante.asignatura %> <br>
+    12: 			<strong>Email: </strong><%= email.asignatura %> <br><br>
+    13: 			<%= link_to "editar", edit_estudiante_path(estudiante) %>
+    14: 			<%= link_to "delete", estudiante_path(estudiante), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+  app/views/estudiantes/index.html.erb:11:in `block in _app_views_estudiantes_index_html_erb___487020129__625300948'
+  app/views/estudiantes/index.html.erb:5:in `_app_views_estudiantes_index_html_erb___487020129__625300948'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (4.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.1ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:04:51 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `email' for #<#<Class:0xb28c5da4>:0xb4bf8bb4>):
+     9: 			<strong>Apellido: </strong><%= estudiante.apellido %> <br>
+    10: 			<strong>Identificacion: </strong><%= estudiante.identificacion %> <br>
+    11: 			<strong>Asignatura: </strong><%= estudiante.asignaturas %> <br>
+    12: 			<strong>Email: </strong><%= email.asignatura %> <br><br>
+    13: 			<%= link_to "editar", edit_estudiante_path(estudiante) %>
+    14: 			<%= link_to "delete", estudiante_path(estudiante), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+    15: 		</li>
+  app/views/estudiantes/index.html.erb:12:in `block in _app_views_estudiantes_index_html_erb___487020129__631259008'
+  app/views/estudiantes/index.html.erb:5:in `_app_views_estudiantes_index_html_erb___487020129__631259008'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.4ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:04:52 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (25.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `email' for #<#<Class:0xb28c5da4>:0xb3c2c208>):
+     9: 			<strong>Apellido: </strong><%= estudiante.apellido %> <br>
+    10: 			<strong>Identificacion: </strong><%= estudiante.identificacion %> <br>
+    11: 			<strong>Asignatura: </strong><%= estudiante.asignaturas %> <br>
+    12: 			<strong>Email: </strong><%= email.asignatura %> <br><br>
+    13: 			<%= link_to "editar", edit_estudiante_path(estudiante) %>
+    14: 			<%= link_to "delete", estudiante_path(estudiante), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+    15: 		</li>
+  app/views/estudiantes/index.html.erb:12:in `block in _app_views_estudiantes_index_html_erb___487020129__639501218'
+  app/views/estudiantes/index.html.erb:5:in `_app_views_estudiantes_index_html_erb___487020129__639501218'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.7ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:05:54 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/8" for 127.0.0.1 at 2016-03-03 14:06:05 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dVCFQga5P5KcPY0IsGwuXJy4djBQwufT09GUJ6mw+rLZxxknmhhUFKmzI4cTBrox4dJY/FlhloSnPeapxWqs8g==", "id"=>"8"}
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 8]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 18ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:05 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/5" for 127.0.0.1 at 2016-03-03 14:06:07 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WZbrcOi2axJYrRVwi6yzR8sHKElUJsfKIcen8dvbjbb1AXcVdBcAlG0ju/8oxicqtm0GhV2Ftp1VK9V/twHb9g==", "id"=>"5"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (18.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 21ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:07 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/6" for 127.0.0.1 at 2016-03-03 14:06:10 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xTuxHl1UCyTBuAHOkAUCttlv4n4S8HnWQ5cggmRSkCRprC17wfVgovQ2r0Ezb5bbpAXMshtTCIE3e1IMCIjGZA==", "id"=>"6"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 6]]
+  [1m[36m (27.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 31ms (ActiveRecord: 27.9ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:10 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 62ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/7" for 127.0.0.1 at 2016-03-03 14:06:13 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LtucS0c9lTb2w3/d+jlPHFUv/1iVkxpXpiXW6XLLBviCTAAu25z+sMNN0VJZU9txKEXRlJwwawDSyaRnHhFQuA==", "id"=>"7"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 7]]
+  [1m[35m (46.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 50ms (ActiveRecord: 46.3ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:13 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/4" for 127.0.0.1 at 2016-03-03 14:06:14 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HA4gfjgGE9WDSd62D5rvkbVcvrEuf6t0Ohro06WFS1iwmbwbpKd4U7bHcDms8Hv8yDaQfSfc2iNO9ppdyV8dGA==", "id"=>"4"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 4]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 16ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:15 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/3" for 127.0.0.1 at 2016-03-03 14:06:17 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5llCDWuNA/GM9Ceui9AEan7ju6CNTsyZuRPaNWMiOddKzt5o9yxod7l6iSEoupAHA4mVbITtvc7N/6i7D/hvlw==", "id"=>"3"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (7.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 12ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:17 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/2" for 127.0.0.1 at 2016-03-03 14:06:19 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kG4heYYKIiyyHgccm3SDe+OxVAY6/Mnzs+NcodKD4Gk8+b0cGqtJqoeQqZM4HhcWntt6yjNfuKTHDy4vvlm2KQ==", "id"=>"2"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 2]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 15ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:06:19 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 14:06:50 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (4.6ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.3ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 14:07:09 -0500
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 14:07:12 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:07:33 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2onRjJgqQBWjrQaqIylcRue8hBVyTSh1VB+ibl0fM4n/bsjrsHChmMAGpUL5jEcZvTc3FxqRfahvAwH1a4qjg==", "estudiante"=>{"nombre"=>"dzghzd", "apellido"=>"xghdzgxhd", "identificacion"=>"5265255", "email"=>"fgjxg@prueb.es"}, "asignaturas"=>["10", "11"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "dzghzd"], ["apellido", "xghdzgxhd"], ["identificacion", 5265255], ["email", "fgjxg@prueb.es"], ["created_at", "2016-03-03 19:07:33.255751"], ["updated_at", "2016-03-03 19:07:33.255751"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 76.0ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.9ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:09:47 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2onRjJgqQBWjrQaqIylcRue8hBVyTSh1VB+ibl0fM4n/bsjrsHChmMAGpUL5jEcZvTc3FxqRfahvAwH1a4qjg==", "estudiante"=>{"nombre"=>"dzghzd", "apellido"=>"xghdzgxhd", "identificacion"=>"5265255", "email"=>"fgjxg@prueb.es"}, "asignaturas"=>["10", "11"], "commit"=>"Create Estudiante"}
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "dzghzd"], ["apellido", "xghdzgxhd"], ["identificacion", 5265255], ["email", "fgjxg@prueb.es"], ["created_at", "2016-03-03 19:09:47.385652"], ["updated_at", "2016-03-03 19:09:47.385652"]]
+  [1m[36m (43.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 49.7ms)
+
+NoMethodError (undefined method `<<' for nil:NilClass):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (6.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.6ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:10:07 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2onRjJgqQBWjrQaqIylcRue8hBVyTSh1VB+ibl0fM4n/bsjrsHChmMAGpUL5jEcZvTc3FxqRfahvAwH1a4qjg==", "estudiante"=>{"nombre"=>"dzghzd", "apellido"=>"xghdzgxhd", "identificacion"=>"5265255", "email"=>"fgjxg@prueb.es"}, "asignaturas"=>["10", "11"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "dzghzd"], ["apellido", "xghdzgxhd"], ["identificacion", 5265255], ["email", "fgjxg@prueb.es"], ["created_at", "2016-03-03 19:10:07.667926"], ["updated_at", "2016-03-03 19:10:07.667926"]]
+  [1m[35m (14.4ms)[0m  commit transaction
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 19.1ms)
+
+NameError (uninitialized constant EstudiantesController::Asignaturas):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (5.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.3ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:10:18 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2onRjJgqQBWjrQaqIylcRue8hBVyTSh1VB+ibl0fM4n/bsjrsHChmMAGpUL5jEcZvTc3FxqRfahvAwH1a4qjg==", "estudiante"=>{"nombre"=>"dzghzd", "apellido"=>"xghdzgxhd", "identificacion"=>"5265255", "email"=>"fgjxg@prueb.es"}, "asignaturas"=>["10", "11"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "dzghzd"], ["apellido", "xghdzgxhd"], ["identificacion", 5265255], ["email", "fgjxg@prueb.es"], ["created_at", "2016-03-03 19:10:18.845068"], ["updated_at", "2016-03-03 19:10:18.845068"]]
+  [1m[36m (44.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 45.4ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.4ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 14:13:17 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered estudiantes/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:13:43 -0500
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:13:59 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/12" for 127.0.0.1 at 2016-03-03 14:14:04 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9U0gLy7z/avofYVgWvcfH2K2wDUkGbpV5gcnd9JB/+VZ2rxKslKWLd3zK+/5nYtyH9zu+S26ywKS61X5vpuppQ==", "id"=>"12"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 12]]
+  [1m[35m (109.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 112ms (ActiveRecord: 109.7ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:14:04 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/11" for 127.0.0.1 at 2016-03-03 14:14:06 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RywakNOFp741GBh/kfY3zk1paKtDXhi3zLSEeGKzQIfru4b1TyTMOACWtvAynKOjMANGZ0r9aeC4WPb2DmkWxw==", "id"=>"11"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 11]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 11ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:14:06 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.3ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/estudiantes/10" for 127.0.0.1 at 2016-03-03 14:14:08 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"maxo5XKqalAv74VcttUI4OpOs0KdV5RvbqIbn4c1lRI1O/SA7gsB1hphK9MVv5yNlySdjpT05TgaTmkR6+/DUg==", "id"=>"10"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 10]]
+  [1m[35m (16.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 21ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:14:08 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/estudiantes/9" for 127.0.0.1 at 2016-03-03 14:14:13 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E3F2s4u5iJfBP/JMFSAIlwCsfIMWjuR/HI7xz6qT57a/5urWFxjjEfSxXMO2Spz6fcZSTx8tlShoYoNBxkmx9g==", "id"=>"9"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 9]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 15ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:14:13 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.3ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 50ms (Views: 44.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:25 -0500
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 73.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:26 -0500
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 14:15:27 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 14:15:28 -0500
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 14:15:50 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered estudiantes/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:28:43 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9X1H24rRMORG+dENiH7mkh370BKq1xOJboLRDX24+wBZ6tu+FnBbYnN3f4IrFHL/YJH+3qN0Yt4abqODEWKtQA==", "estudiante"=>{"nombre"=>"gk,gjjkb", "apellido"=>"dkstyd,luy", "identificacion"=>"6464867", "email"=>"dfgdff@prueba.es"}, "asignaturas"=>["12", "13", "14"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "gk,gjjkb"], ["apellido", "dkstyd,luy"], ["identificacion", 6464867], ["email", "dfgdff@prueba.es"], ["created_at", "2016-03-03 19:28:43.548524"], ["updated_at", "2016-03-03 19:28:43.548524"]]
+  [1m[36m (56.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 58.9ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.9ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:32:32 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9X1H24rRMORG+dENiH7mkh370BKq1xOJboLRDX24+wBZ6tu+FnBbYnN3f4IrFHL/YJH+3qN0Yt4abqODEWKtQA==", "estudiante"=>{"nombre"=>"gk,gjjkb", "apellido"=>"dkstyd,luy", "identificacion"=>"6464867", "email"=>"dfgdff@prueba.es"}, "asignaturas"=>["12", "13", "14"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "gk,gjjkb"], ["apellido", "dkstyd,luy"], ["identificacion", 6464867], ["email", "dfgdff@prueba.es"], ["created_at", "2016-03-03 19:32:32.564331"], ["updated_at", "2016-03-03 19:32:32.564331"]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 12.3ms)
+
+NameError (undefined local variable or method `asignatura' for #<EstudiantesController:0xb36e3120>):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.7ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 14:32:58 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9X1H24rRMORG+dENiH7mkh370BKq1xOJboLRDX24+wBZ6tu+FnBbYnN3f4IrFHL/YJH+3qN0Yt4abqODEWKtQA==", "estudiante"=>{"nombre"=>"gk,gjjkb", "apellido"=>"dkstyd,luy", "identificacion"=>"6464867", "email"=>"dfgdff@prueba.es"}, "asignaturas"=>["12", "13", "14"], "commit"=>"Create Estudiante"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "gk,gjjkb"], ["apellido", "dkstyd,luy"], ["identificacion", 6464867], ["email", "dfgdff@prueba.es"], ["created_at", "2016-03-03 19:32:58.138685"], ["updated_at", "2016-03-03 19:32:58.138685"]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 13.3ms)
+
+NameError (uninitialized constant EstudiantesController::Asignatura):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.5ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.7ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:06:22 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (4.0ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 89ms (Views: 83.3ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/estudiantes/15" for 127.0.0.1 at 2016-03-03 15:06:31 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n83fC6E3MRe6/ejjsbFjbAkxstSV14j8/VExyq0FN1szWkNuPZZakY9zRmwS2/cBdFucGJx0+auJvUNEwd9hGw==", "id"=>"15"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 15]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 15ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:06:31 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/estudiantes/14" for 127.0.0.1 at 2016-03-03 15:06:34 -0500
+Processing by EstudiantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mlAy/axNAuMxWr6gd29iECsi+Mp62eJilW0hUpjVL8U2x66YMOxpZQTUEC/UBfZ9VkjWBnN6kzXhgVPc9A95hQ==", "id"=>"14"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?  [["id", 14]]
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 21ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:06:34 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 15:07:07 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 70ms (Views: 59.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-03 15:07:27 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vYIszTfuIH/LUxF/qi4chy8TuoYGrye+XMEtYPCCZr0RFbCoq09L+f7dv/AJRIjqUnmUSg8MVukoLV/unFgw/Q==", "estudiante"=>{"nombre"=>"dxioxdtr5o", "apellido"=>"dtyoxidx", "identificacion"=>"4564321", "email"=>"sghsdnkg@prueba.es"}, "asignaturas"=>["11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "dxioxdtr5o"], ["apellido", "dtyoxidx"], ["identificacion", 4564321], ["email", "sghsdnkg@prueba.es"], ["created_at", "2016-03-03 20:07:27.235049"], ["updated_at", "2016-03-03 20:07:27.235049"]]
+  [1m[35m (58.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 59.0ms)
+
+NoMethodError (undefined method `<<' for nil:NilClass):
+  app/controllers/estudiantes_controller.rb:20:in `create'
+
+
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.8ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (6.4ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.1ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.9ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:12:09 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.3ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 88ms (Views: 71.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-03 15:12:30 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered estudiantes/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estudiantes/1/edit" for 127.0.0.1 at 2016-03-03 15:13:15 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSubject Load (2.3ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered estudiantes/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 2.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstudiantesSubjects (20160303201405)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "estudiantes_subjects" ("estudiante_id" integer, "subject_id" integer) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160303201405"]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes"  ORDER BY "estudiantes"."id" DESC LIMIT 1[0m
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT  "estudiantes".* FROM "estudiantes"  ORDER BY "estudiantes"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT  "estudiantes".* FROM "estudiantes"  ORDER BY "estudiantes"."id" DESC LIMIT 1
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  ORDER BY "subjects"."id" ASC LIMIT 1[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 16], ["subject_id", 10]]
+  [1m[35m (41.8ms)[0m  commit transaction
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes"  ORDER BY "estudiantes"."id" DESC LIMIT 1[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes"  ORDER BY "estudiantes"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+
+
+Started GET "/estudiantes/1/edit" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEstudiante Load (5.7ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.1ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  Rendered estudiantes/edit.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 142ms (Views: 114.6ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 15:17:25 -0500
+
+
+Started PATCH "/estudiantes/1" for 127.0.0.1 at 2016-03-03 15:17:29 -0500
+Processing by EstudiantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+CaRoqi0Elr8ZQPdUog/CSsO97MmQaWoCbSBtSCgwo9UsQ3HNBV53MnrrVLx4qtkVmTZfy/i1P99WPM7THqUzw==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "subject_ids"=>["10", "11", ""], "email"=>"luisaf@prueba.es"}, "commit"=>"Update Estudiante", "id"=>"1"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (10, 11)[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 1], ["subject_id", 10]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)  [["estudiante_id", 1], ["subject_id", 11]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 32ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:17:29 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  Rendered estudiantes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudiantes/1/edit" for 127.0.0.1 at 2016-03-03 15:17:32 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  [1m[36m (0.1ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  Rendered estudiantes/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/estudiantes/1" for 127.0.0.1 at 2016-03-03 15:17:35 -0500
+Processing by EstudiantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6M+5+iTfa6TpkJQSA2hKJjORNBb6ehnPvozbtglb+m5EWCWfuH4AItweOp2gAt5LTvsa2vPZaJjKYKk4ZYGsLg==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "subject_ids"=>["10", "11", "12", "13", ""], "email"=>"luisaf@prueba.es"}, "commit"=>"Update Estudiante", "id"=>"1"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (10, 11, 12, 13)
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)  [["estudiante_id", 1], ["subject_id", 12]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 1], ["subject_id", 13]]
+  [1m[35m (11.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 22ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:17:35 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  Rendered estudiantes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/estudiantes/1/edit" for 127.0.0.1 at 2016-03-03 15:17:36 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.1ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  Rendered estudiantes/edit.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/estudiantes/1" for 127.0.0.1 at 2016-03-03 15:18:24 -0500
+Processing by EstudiantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3F+7fP975fkQWzdZqo79uHIK9+cgOplYNrgVJ1vdDiVwyCcZY9qOfyXVmdYJ5GnVD2DZKymZ6A9CVGepNwdYZQ==", "estudiante"=>{"nombre"=>"Luisa Fernanda", "apellido"=>"Lopera", "identificacion"=>"123456789", "subject_ids"=>["10", "11", "12", "13", ""], "email"=>"luisaf@prueba.es"}, "commit"=>"Update Estudiante", "id"=>"1"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (10, 11, 12, 13)[0m
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:18:24 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  Rendered estudiantes/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.4ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  Rendered estudiantes/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 15:19:19 -0500
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  Rendered estudiantes/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 15:20:20 -0500
+
+
+Started GET "/estudiantes/13/edit" for 127.0.0.1 at 2016-03-03 15:20:25 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  Rendered estudiantes/edit.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/estudiantes/13" for 127.0.0.1 at 2016-03-03 15:20:27 -0500
+Processing by EstudiantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l5ZfeBGWDOVHOUsqqZ87vRGxBEg99nvK17abwIT+gVk7AcMdjTdnY3K35aUK9a/QbNsqhDRVCp2jWulO6CTXGQ==", "estudiante"=>{"nombre"=>"gk,gjjkb", "apellido"=>"dkstyd,luy", "identificacion"=>"6464867", "subject_ids"=>["12", ""], "email"=>"dfgdff@prueba.es"}, "commit"=>"Update Estudiante", "id"=>"13"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 13], ["subject_id", 12]]
+  [1m[35m (34.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 44ms (ActiveRecord: 36.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-03 15:20:27 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+  Rendered estudiantes/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.5ms)
