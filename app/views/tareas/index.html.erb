@@ -1,0 +1,17 @@
+<h1>Tareas</h1>
+
+
+<ol>
+	<% @tarea.each do |tarea| %>
+
+		<li>
+			<strong>Enunciado: </strong><%= tarea.enunciado %> <br>
+			<strong>Fecha de entrega: </strong><%= tarea.fecha %> <br><br>
+			<%= link_to "editar", edit_tarea_path(tarea) %>
+			<%= link_to "delete", tarea_path(tarea), method: :delete, data: {confirm: "Estas seguro ? "} %><br>
+		</li>
+
+	<% end %>
+</ol>
+
+<%= link_to "Agregar tarea", new_tarea_path %>

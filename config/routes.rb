@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :subjects
   resources :teachers
   resources :estudiantes
+  resources :tareas
 
   # Example resource route with options:
   #   resources :products do

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enunciado: MyString
+  fecha: 2016-03-03 16:11:52
+
+two:
+  enunciado: MyString
+  fecha: 2016-03-03 16:11:52
