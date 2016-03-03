@@ -1,0 +1,21 @@
+<h1>Agregar respuesta</h1>
+
+<%= form_for @respuesta do |f| %>
+
+  <p>
+    <%= f.label :mensaje, "Mensaje" %><br>
+    <%= f.text_area :mensaje %>
+  </p>
+
+<p>
+  <%= f.label :calificacion, "Calificacion" %><br>
+  <%= f.text_area :calificacion %>
+</p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to "Ver lista de respuestas", respuestas_path %>

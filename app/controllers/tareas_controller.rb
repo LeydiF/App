@@ -1,4 +1,5 @@
 class TareasController < ApplicationController
+	
 	def index
 		@tarea = Tarea.all
 	end

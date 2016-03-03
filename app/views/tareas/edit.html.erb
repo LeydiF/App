@@ -1,25 +1,15 @@
-<%= form_for @teacher do |f| %>
+<%= form_for @tarea do |f| %>
 
   <p>
-    <%= f.label :nombre, "Nombre" %><br>
-    <%= f.text_area :nombre %>
+    <%= f.label :enunciado, "Enunciado" %><br>
+    <%= f.text_area :enunciado %>
   </p>
 
 <p>
-  <%= f.label :apellido, "Apellido" %><br>
-  <%= f.text_area :apellido %>
+  <%= f.label :fecha, "Fecha" %><br>
+  <%= f.text_area :fecha %>
 </p>
 
-<p>
-  <%= f.label :identificacion, "Identificacion" %><br>
-  <%= f.text_area :identificacion %>
-</p>
-
-<p>
-  <%= f.label :asignatura, "asignatura" %><br>
-  <%= f.text_area :asignatura %>
-</p>
- 
   <p>
     <%= f.submit %>
   </p>

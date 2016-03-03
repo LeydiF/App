@@ -1,0 +1,17 @@
+<h1>Respuestas</h1>
+
+
+<ol>
+	<% @respuesta.each do |respuesta| %>
+
+		<li>
+			<strong>Mensaje: </strong><%= respuesta.mensaje %> <br>
+			<strong>Calificacion: </strong><%= respuesta.calificacion %> <br><br>
+			<%= link_to "editar", edit_respuesta_path(respuesta) %>
+			<%= link_to "delete", respuesta_path(respuesta), method: :delete, data: {confirm: "Estas seguro ? "} %>
+		</li>
+
+	<% end %>
+</ol>
+
+<%= link_to "Agregar respuesta", new_respuesta_path %>
