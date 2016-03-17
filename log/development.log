@@ -6989,3 +6989,289 @@ ActionView::Template::Error (undefined method `respuesta_index_path' for #<#<Cla
   Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (4.7ms)
   Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /home/leydi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 17:28:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tareas" for 127.0.0.1 at 2016-03-07 13:36:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TareasController#index as HTML
+  [1m[35mTarea Load (6.9ms)[0m  SELECT "tareas".* FROM "tareas"
+  Rendered tareas/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 403ms (Views: 380.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/respuestas" for 127.0.0.1 at 2016-03-07 13:37:03 -0500
+Processing by RespuestasController#index as HTML
+  [1m[36mRespuesta Load (0.1ms)[0m  [1mSELECT "respuesta".* FROM "respuesta"[0m
+  Rendered respuestas/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2016-03-07 13:37:13 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT "teachers".* FROM "teachers"
+  Rendered teachers/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 113ms (Views: 107.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-07 13:49:26 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+  Rendered estudiantes/index.html.erb within layouts/application (92.7ms)
+Completed 200 OK in 193ms (Views: 156.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-07 13:49:28 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2016-03-07 13:57:42 -0500
+Processing by EstudiantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0XuGibjgcBg8Hv93aARPV9smgcK6fIf97uTKRQcK3+p97BrsJEEbngmQUfjLbts6pkyvDrPf9qqaCLjLa9CJqg==", "estudiante"=>{"nombre"=>"Leydi", "apellido"=>"Florez", "identificacion"=>"1017188791", "email"=>"leidyflor2007hotmail.com"}, "asignaturas"=>["10", "11", "12"], "commit"=>"Create Estudiante"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "estudiantes" ("nombre", "apellido", "identificacion", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leydi"], ["apellido", "Florez"], ["identificacion", 1017188791], ["email", "leidyflor2007hotmail.com"], ["created_at", "2016-03-07 18:57:42.520460"], ["updated_at", "2016-03-07 18:57:42.520460"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 34ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-07 13:57:42 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+  [1m[36mSubject Load (0.0ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  Rendered estudiantes/index.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-07 13:58:55 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.3ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  Rendered estudiantes/index.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 144ms (Views: 139.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/course.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/estudiantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/respuestas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/subject.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/tareas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/teachers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/course.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/subject.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/respuestas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/teachers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/tareas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/estudiantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-07 13:58:56 -0500
+
+
+Started GET "/estudiantes/17/edit" for 127.0.0.1 at 2016-03-07 13:59:51 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35mSubject Load (4.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  [1m[36m (0.1ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  Rendered estudiantes/edit.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 149ms (Views: 120.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/estudiantes/13/edit" for 127.0.0.1 at 2016-03-07 14:00:01 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.1ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  Rendered estudiantes/edit.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudiantes/1/edit" for 127.0.0.1 at 2016-03-07 14:00:10 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  [1m[36m (0.1ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  Rendered estudiantes/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estudiantes/17/edit" for 127.0.0.1 at 2016-03-07 14:00:18 -0500
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mEstudiante Load (0.1ms)[0m  SELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  [1m[35m (0.1ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "subjects".id FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  Rendered estudiantes/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/estudiantes/17" for 127.0.0.1 at 2016-03-07 14:00:24 -0500
+Processing by EstudiantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BSAnjuUS4YZ2t/NRzfUm/YAgpcwyDW22Ov2b9FYfIPKpt7vrebOKAEM5Xd5un7KQ/UqLADuuHOFOEel6OsV2sg==", "estudiante"=>{"nombre"=>"Leydi", "apellido"=>"Florez", "identificacion"=>"1017188791", "subject_ids"=>["10", "11", "12", ""], "email"=>"leidyflor2007hotmail.com"}, "commit"=>"Update Estudiante", "id"=>"17"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSubject Load (1.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (10, 11, 12)[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 17], ["subject_id", 10]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)  [["estudiante_id", 17], ["subject_id", 11]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "estudiantes_subjects" ("estudiante_id", "subject_id") VALUES (?, ?)[0m  [["estudiante_id", 17], ["subject_id", 12]]
+  [1m[35m (10.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/estudiantes
+Completed 302 Found in 31ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-07 14:00:24 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[36mEstudiante Load (0.2ms)[0m  [1mSELECT "estudiantes".* FROM "estudiantes"[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 1]]
+  [1m[36mSubject Load (0.0ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 13]]
+  [1m[35mSubject Load (0.0ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 16]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 17]]
+  Rendered estudiantes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 17:04:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.9ms)
+Completed 200 OK in 406ms (Views: 389.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-17 17:04:24 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  Rendered estudiantes/index.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 187ms (Views: 177.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2016-03-17 17:04:31 -0500
+Processing by EstudiantesController#new as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered estudiantes/new.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2016-03-17 17:04:34 -0500
+Processing by EstudiantesController#index as HTML
+  [1m[35mEstudiante Load (0.2ms)[0m  SELECT "estudiantes".* FROM "estudiantes"
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 13]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?[0m  [["estudiante_id", 16]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" INNER JOIN "estudiantes_subjects" ON "subjects"."id" = "estudiantes_subjects"."subject_id" WHERE "estudiantes_subjects"."estudiante_id" = ?  [["estudiante_id", 17]]
+  Rendered estudiantes/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20160317221007)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "username" varchar, "description" text, "avatar" varchar, "role" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160317221007"]]
+  [1m[36m (58.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+

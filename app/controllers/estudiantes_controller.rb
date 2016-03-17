@@ -18,6 +18,7 @@ class EstudiantesController < ApplicationController
 		@estudiante = Estudiante.new(estudiante_params)
 		@estudiante.save
 		redirect_to estudiantes_path
+
 	end
 
 	def estudiante_params
