@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
 		has_many :estudiantes
         has_many :subjects
 
+        #mount_uploader :avatar, AvatarUploader
+
 end

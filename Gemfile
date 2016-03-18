@@ -41,6 +41,8 @@ gem "letter_opener", :group => :development
 
 gem 'activeadmin', '~> 1.0.0.pre2' 
 
+gem 'carrierwave'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
