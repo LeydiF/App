@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentification with devise
 gem 'devise', '~> 4.0.0.rc2'
 
+#esta gema es solo para desarrollo, esta gema me muestra como le llega el correo al usuario
+gem "letter_opener", :group => :development
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
