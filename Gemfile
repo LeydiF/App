@@ -33,10 +33,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # Authentification with devise
-gem 'devise', '~> 4.0.0.rc2'
+gem 'devise', '~> 3.2'
 
 #esta gema es solo para desarrollo, esta gema me muestra como le llega el correo al usuario
 gem "letter_opener", :group => :development
+
+
+gem 'activeadmin', '~> 1.0.0.pre2' 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
